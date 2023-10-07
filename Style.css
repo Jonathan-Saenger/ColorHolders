@@ -1,0 +1,179 @@
+
+/* Configuration des polices d'écritures*/
+h1 {
+    font-family: Pacifico;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Merienda;
+}
+
+h3 {
+    font-family: Karma;
+    font-weight: 600;
+}
+
+p { 
+    font-family: Karma;
+    text-align: justify;
+}
+
+li {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: #212529;
+}
+
+.link:hover {
+    background-color: #FFC107;
+    border-radius: 35%;
+}
+
+
+.actu {
+    background-color: #FFC107; 
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_footer {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help h3 {
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+}
+
+.help ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link_menu h3 {
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+}
+
+.link_menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.legale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.legale h3 {
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+}
+
+.legale ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_footer .help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #212529;
+}
+
+.social_image {
+    display: flex;  
+    flex-direction: row;
+    width: auto;
+    height: auto;
+}
+
+.social_image img {
+    margin: 5px;
+}
+
+.title {
+    color: white;
+    margin-top: 10px;
+}
+
+.accordion_width {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.droits {
+    margin: auto;
+    text-align: center;
+}
+
+/* Mediaqueries footer */
+
+@media screen and (min-width: 750px){
+    .main_footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 950px){
+    .help {
+        margin-right: 70px;
+    }
+
+    .legale {
+        margin-left: 70px;
+    }
+}
+
+
+
+
+
+
