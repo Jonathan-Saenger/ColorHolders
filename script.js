@@ -4,6 +4,19 @@ const start = document.getElementById("start");
 
 start.onclick = () => alert("Patience, le jeu arrive bientôt !");*/
 
+// AJAX sur la page d'accueil 
+$(document).ready(function() {
+    // On charge les données de la section "Actualités"
+    $.ajax({
+      url: "Index.html",
+      method: "GET",
+      success: function(data) {
+        // On affiche les données dans la section "Actualités"
+        $("#Index").html(data);
+      }
+    });
+  });
+
 
 //Animation prénom
 const button = document.getElementById("start");
@@ -19,17 +32,5 @@ button.addEventListener("click", () => {
             alert("Règle du jeu numéro 2 : saisir des lettres ;-\)");
         }
 });
-
-$(document).ready(function() {
-    // On charge les données de la section "Actualités"
-    $.ajax({
-      url: "Index.html",
-      method: "GET",
-      success: function(data) {
-        // On affiche les données dans la section "Actualités"
-        $("#Index").html(data);
-      }
-    });
-  });
 
 
